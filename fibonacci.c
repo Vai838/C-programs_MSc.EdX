@@ -1,4 +1,4 @@
-#inlcude<stdio.h>
+#include<stdio.h>
 
 int main(void)
 {
@@ -6,11 +6,11 @@ int main(void)
   printf("Enter the number of terms: \n");
   scanf("%d", &n);
 
-  printf("The fibonacci series is: %d, %d,", f1, f2);
+  printf("The fibonacci series is: %d,%d", f1, f2);
 
   for(int i=1; i<=n-2; i++){
     nextTerm = f1+f2;
-    printf("%d,", nextTerm);
+    printf(",%d", nextTerm);
     f1 = f2;
     f2 = nextTerm;
   }
